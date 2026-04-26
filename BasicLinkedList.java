@@ -1,5 +1,16 @@
-import java.util.*;
+class ListNode {
+  private int item;
+  private ListNode next;
 
+  public ListNode(int item) {
+    this.item = item;
+    this.next = null;
+  }
+
+  public int getItem() { return item; }
+  public ListNode getNext() { return next; }
+  public void setNext(ListNode next) { this.next = next; }
+}
 class BasicLinkedList implements ListInterface {
   // attributes
   public ListNode head;
