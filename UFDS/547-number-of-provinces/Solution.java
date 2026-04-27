@@ -33,11 +33,13 @@ class UFDS {
         }
     }
 
-    public int find(int x) {
-        if (parent[x] != x) {
-            parent[x] = find(parent[x]); //path compression
+    public int find(int i) {
+        if (parent[i] == i) {
+            return i;
         }
-        return parent[x];
+
+        //path compression
+        return parent[i] = find(parent[i]);
     }
 
     public void union(int i, int j) {
