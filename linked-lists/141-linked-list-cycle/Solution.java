@@ -12,7 +12,7 @@ public class Solution {
             this.next = next;
         }
     }
-    public boolean hasCycle(ListNode head) {
+    boolean hasCycle(ListNode head) {
 
         ListNode fast = head;
         ListNode slow = head;
