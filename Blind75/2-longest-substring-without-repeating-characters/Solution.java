@@ -7,17 +7,17 @@ public class Solution {
     // shrink from the left until the window is valid again. Each index enters and
     // leaves the window at most once -> O(n).
     public int lengthOfLongestSubstring(String s) {
-        HashMap<Character, Integer> seen = new HashMap<>(); // char -> count inside the window
+        HashMap<Character, Integer> freqMap = new HashMap<>(); // char -> count in window
         int start = 0;
         int maxLength = 0;
 
         for (int end = 0; end < s.length(); end++) {
-            char ch = s.charAt(end);
-            seen.put(ch, seen.getOrDefault(ch, 0) + 1);
+            char endChar = s.charAt(end);
+            freqMap.put(endChar, freqMap.getOrDefault(endChar, 0) + 1);
 
-            while (seen.get(ch) > 1) {
+            while (freqMap.get(endChar) > 1) {
                 char startChar = s.charAt(start);
-                seen.put(startChar, seen.get(startChar) - 1);
+                freqMap.put(startChar, freqMap.get(startChar) - 1);
                 start++;
             }
 
