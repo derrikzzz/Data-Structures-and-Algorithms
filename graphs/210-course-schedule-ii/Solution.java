@@ -1,5 +1,3 @@
-package graphs.210-course-schedule-ii;
-
 import java.util.ArrayList;
 import java.util.ArrayDeque;
 import java.util.Deque;

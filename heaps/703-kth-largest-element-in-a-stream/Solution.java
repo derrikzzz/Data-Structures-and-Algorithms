@@ -1,5 +1,3 @@
-package heaps.703-kth-largest-element-in-a-stream;
-
 import java.util.PriorityQueue;
 
 // Time: O(log k) per add — heap bounded by size k

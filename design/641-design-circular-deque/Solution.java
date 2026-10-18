@@ -1,5 +1,3 @@
-package design.641-design-circular-deque;
-
 class MyCircularDeque {
     private final int[] q;
     private int front;

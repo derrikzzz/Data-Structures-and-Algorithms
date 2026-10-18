@@ -1,5 +1,3 @@
-package daily.1614-maximum-nesting-depth-of-parentheses;
-
 // Time: O(n) — single pass through the string
 // Space: O(1) — only two integer variables
 public class Solution {

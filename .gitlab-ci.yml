@@ -1,0 +1,10 @@
+compile:
+  image: eclipse-temurin:21-jdk
+  rules:
+    - changes:
+        - "**/*.java"
+        - ".github/**/*"
+        - "ci/**/*"
+        - ".gitlab-ci.yml"
+  script:
+    - bash ci/compile.sh

@@ -1,5 +1,3 @@
-package trees.100-same-tree;
-
 public class Solution {
     public class TreeNode {
         int val;

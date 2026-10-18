@@ -1,5 +1,3 @@
-package daily.2351-first-letter-appear-twice;
-
 import java.util.HashSet;
 
 // Time: O(n) — single pass through the string

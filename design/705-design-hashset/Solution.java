@@ -1,5 +1,3 @@
-package design.705-design-hashset;
-
 import java.util.LinkedList;
 
 // Time: O(n/k) average — n keys spread across k buckets; O(1) amortized with low load factor

@@ -1,5 +1,3 @@
-package daily.3903-smallest-stable-index;
-
 public class Solution {
     public int firstStableIndex(int[] nums, int k) {
         int n = nums.length;

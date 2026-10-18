@@ -1,5 +1,3 @@
-package heaps.215-kth-largest-element;
-
 import java.util.PriorityQueue;
 
 public class Solution {

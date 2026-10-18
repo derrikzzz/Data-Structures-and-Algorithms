@@ -1,4 +1,3 @@
-package dp.322-coin-change;
 import java.util.Arrays;
 
 public class Solution {

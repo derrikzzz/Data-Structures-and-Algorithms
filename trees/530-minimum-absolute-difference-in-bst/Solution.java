@@ -1,5 +1,3 @@
-package trees.530-minimum-absolute-difference-in-bst;
-
 // Time: O(n) — visits every node once
 // Space: O(h) — recursion stack, h = height of tree
 public class Solution {

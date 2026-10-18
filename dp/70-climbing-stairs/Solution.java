@@ -1,5 +1,3 @@
-package dp.70-climbing-stairs;
-
 import java.util.HashMap;
 import java.util.Map;
 

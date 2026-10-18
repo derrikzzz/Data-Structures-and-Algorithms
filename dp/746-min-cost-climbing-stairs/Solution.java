@@ -1,5 +1,3 @@
-package dp.746-min-cost-climbing-stairs;
-
 public class Solution {
     public int minCostClimbingStairs(int[] cost) {
         int n = cost.length;

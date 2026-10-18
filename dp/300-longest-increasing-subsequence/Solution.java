@@ -1,5 +1,3 @@
-package dp.300-longest-increasing-subsequence;
-
 public class Solution {
     public int longestIncreasingSubsequence(int[] nums) {
         if (nums == null || nums.length == 0) {

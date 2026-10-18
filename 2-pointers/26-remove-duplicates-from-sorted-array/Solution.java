@@ -1,5 +1,3 @@
-package 2-pointers.26-remove-duplicates-from-sorted-array;
-
 // Time: O(n) — single pass
 // Space: O(1) — in-place, no extra array
 public class Solution {

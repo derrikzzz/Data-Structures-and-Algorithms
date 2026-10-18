@@ -1,5 +1,3 @@
-package 2-pointers.28-find-the-index-of-the-first-occurrence-in-a-string;
-
 public class Solution {
     public int strStr(String haystack, String needle) {
         int n = haystack.length();

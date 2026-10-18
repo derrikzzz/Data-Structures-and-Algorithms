@@ -1,5 +1,3 @@
-package interval-dp.56-merge-intervals;
-
 import java.util.Arrays;
 import java.util.ArrayList;
 import java.util.List;
@@ -28,5 +26,6 @@ public class Solution {
         }
 
         return merged.toArray(new int[merged.size()][]);
+
     }
 }

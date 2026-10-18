@@ -1,5 +1,3 @@
-package design.622-design-circular-queue;
-
 class MyCircularQueue {
     private final int[] q;
     private int front;

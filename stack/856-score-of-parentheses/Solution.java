@@ -1,5 +1,3 @@
-package stack.856-score-of-parentheses;
-
 import java.util.ArrayDeque;
 import java.util.Deque;
 
