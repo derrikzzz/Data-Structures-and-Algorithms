@@ -15,7 +15,9 @@ public class Solution {
         int[] inDegrees = new int[numCourses];
 
         for (int[] p : prerequisites) {
-            graph.get(p[1]).add(p[0]); // b -> a
+            graph.get(p[1]).add(p[0]); // b -> a, [a, b]
+            // p = [a, b]: take b before a. The edge b -> a points INTO a, so a gets one
+            // more prerequisite. In-degree goes up for whichever node the edge points to.
             inDegrees[p[0]]++;
         }
 
