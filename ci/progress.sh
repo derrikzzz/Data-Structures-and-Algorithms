@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Regenerate PROGRESS.md: every <topic>/<problem>/ folder holding a .java file,
+# Regenerate PROGRESS.md: every <topic>/<problem>/ folder holding a .java or .sql file,
 # grouped by topic. The date and approach come from the commit that first added
 # the folder ("... using <approach> approach"); uncommitted folders show "—".
 set -euo pipefail
@@ -12,7 +12,7 @@ added() {
 }
 
 rows=$(
-  find . -mindepth 3 -maxdepth 3 -name '*.java' -not -path './.*' |
+  find . -mindepth 3 -maxdepth 3 \( -name '*.java' -o -name '*.sql' \) -not -path './.*' |
     sed -E 's#^\./([^/]+/[^/]+)/.*#\1#' | sort -u |
     awk '
       NR == FNR {
